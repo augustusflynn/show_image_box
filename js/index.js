@@ -90,8 +90,8 @@ for (let i = 0; i < 9; i++) {
 
 const swiper = new Swiper('.swiper', {
     // Optional parameters
-    direction: 'vertical',
-    loop: true,
+    direction: 'horizontal',
+    loop: false,
 
     // If we need pagination
     pagination: {
@@ -111,7 +111,7 @@ const swiper = new Swiper('.swiper', {
 });
 
 swiper.on('slideChange', function (e) {
-    currentImage = e.snapIndex;
+    currentImage = e.snapIndex + 1;
 });
 
 
